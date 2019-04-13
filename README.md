@@ -27,7 +27,7 @@ After verifying the time needed to process the example input file, I proceeded t
 Lastly I created `ParallelStreamNumberFinderImpl`, to again, make use of Stream API, but this time with the help of multithreading. It will perform the processing in a custom `ForkJoinPool` thread pool. The parallelism is configured to two threads per core.
 
   
-#####Result
+##### Result
 
 To better compare the time each implementation would take, I temporarily set `FastestComparator:compare` variable `mSeconds` to 10000. After some benchmarking runs using NumberFinderTest, this was the result:
 
